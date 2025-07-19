@@ -1,0 +1,163 @@
+body {
+    background-color: #FEFDF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.pict {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.pict img {
+    width: 30px;
+    margin-right: 5px;
+}
+.divider {
+    width: 100%;
+    height: 0.5px;
+    background-color: #AF9090;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.container {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    width: 65%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.container .divider {
+    margin: 10px 0;
+}
+.container .line {
+    width: 100%;
+    height: 0.5px;
+    background-color: #757575;
+    margin: 5px;
+}   
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.logo {
+    margin-bottom: 10px;
+
+}
+.logo img {
+    width: 60px;
+    border-radius: 50%;
+}
+.title {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.left {
+    padding-left: 10px;
+    width: 300px;
+}
+.right {
+    padding-right: 10px;
+    width: 45%;
+}
+.right a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.right a:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.right .account {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 7px;
+    border: none;
+    background: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.right hr{
+    border: #d9d9d9 solid 1px;
+    width: 100%;
+}
+.right .account:hover {
+    background-color: #e8e8e8;
+}
+.right .account .avatar {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 14px;
+}
+.right .account .text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.right .account .name {
+    font-size: 15px;
+    font-weight: 550;
+}
+.right .account .use {
+    font-size: 10px;
+    font-weight: 550;
+}
+.right .account .email {
+    font-size: 15px;
+    color: #666;
+}
+.right .another {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.right .another i {
+    font-size: 25px;
+    color: #000;
+}
+.right .another i:hover {
+    font-size: 25px;
+    color: #F12A2A;
+}
+.right .red {
+    background-color: #ff0000;
+}
+.right .Gold {
+    background-color: #FFD700;
+}
+.right .Magenta {
+    background-color: #FF00FF;
+}
+.privacy {
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+    text-align: start;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

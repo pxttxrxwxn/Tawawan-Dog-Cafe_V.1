@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawawan Dog Café</title>
+    <link rel="icon" href="./picture/icon.png">
+    <link href="./Bakery Categories-admin.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./Bakery Categories-admin.html"><img src="./picture/icon.png" alt="Tawawan Dog Café"></a>
+            </div>
+            <div class="search-bar">
+                <input type="search" placeholder="  ค้นหาเมนู">
+                <button>🔍︎</button>
+            </div>
+            <div class="menu-buttons">
+                <a href="../index/index-admin.html"><button>หน้าแรก</button></a>
+                <a href="../edit-menu/edit-menu-admin.html"><button>แก้ไขเมนู</button></a>
+                <a href="../Classification/Classification.html"><button>แก้ไขโปรโมชั่น</button></a>
+            </div>
+            <div class="icon-buttons">
+                <a href="../notification/notification-admin.html"><button><i class='bx bx-bell'></i></button></a>
+                <a href="../PersonalInformation/PersonalInformation-admin.html"><button style="border-radius: 10px;"><i class='bx bx-user-circle'id="account-btn" ></i></button></a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="menu-container">
+        <div class="menu-title">เบเกอรี่</div>
+        <br>
+        <div class="menu-grid">
+            <div class="menu-item-edit">
+                <label class="file-upload">
+                    <input type="file" id="menu-image" accept="image/*">
+                    <div class="preview-container">
+                        <i class="bx bx-landscape preview-image"></i>
+                    </div>
+                </label>
+                <div class="menu-details-edit">
+                    <input type="text" id="menu-name" placeholder="ชื่อเมนู">
+                    <input type="number" id="menu-price" placeholder="ราคา">
+                    <button id="add-menu-button">เพิ่มเมนู</button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./picture/bx.jpg">
+                <div class="menu-details">
+                    <div class="menu-name"><p>เมนู ชีสเค้กหน้าไหม้</p><i class='bx bx-trash'></i></div>
+                    <div class="menu-price">ราคา 55 บาท</div>
+                    <button class="edit-button"><i class='bx bx-edit-alt'></i></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./picture/bxx.jpg">
+                <div class="menu-details">
+                    <div class="menu-name"><p>เมนู เค้กวนิลามะพร้าวอ่อน</p><i class='bx bx-trash'></i></div>
+                    <div class="menu-price">ราคา 470 บาท</div>
+                    <button class="edit-button"><i class='bx bx-edit-alt'></i></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./picture/bxxx.jpg">
+                <div class="menu-details">
+                    <div class="menu-name"><p>เมนู เค้กช็อกโกแลตสตรอเบอรี่</p><i class='bx bx-trash'></i></div>
+                    <div class="menu-price">ราคา 55 บาท</div>
+                    <button class="edit-button"><i class='bx bx-edit-alt'></i></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./picture/bxxxx.jpg">
+                <div class="menu-details">
+                    <div class="menu-name"><p>เมนู เค้กสตรอเบอรี่นมสด</p><i class='bx bx-trash'></i></div>
+                    <div class="menu-price">ราคา 450 บาท</div>
+                    <button class="edit-button"><i class='bx bx-edit-alt'></i></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./picture/bxxxxx.jpg">
+                <div class="menu-details">
+                    <div class="menu-name"><p>เมนู ช็อกโกแลตดูไบ</p><i class='bx bx-trash'></i></div>
+                    <div class="menu-price">ราคา 100 บาท</div>
+                    <button class="edit-button"><i class='bx bx-edit-alt'></i></button>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="./picture/bxxxxxx.jpg">
+                <div class="menu-details">
+                    <div class="menu-name"><p>เมนู ชีสสึจัมโบ้บิงซู</p><i class='bx bx-trash'></i></div>
+                    <div class="menu-price">ราคา 115 บาท</div>
+                    <button class="edit-button"><i class='bx bx-edit-alt'></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    
+    
+    
+    <footer>
+        <div class="footer-container">
+            <h1 class="footer-title">Tawawan Dog Café</h1>
+            
+            <div class="contact-info">
+                <p>
+                    <a href="https://www.facebook.com/TAWAWAN.CAFE" target="_blank" rel="noopener noreferrer"><img src="./picture/facebook.png" alt="Facebook" class="icon"> Tawawan Dog Café </a>
+                </p>
+                <p>
+                    <img src="./picture/telephone.png" alt="Phone" class="icon"> 093 249 5900
+                </p>
+                <p>
+                    <img src="./picture/mail.png" alt="Email" class="icon"> 
+                    <a href="mailto:nattaponkhamma160855@gmail.com">nattaponkhamma160855@gmail.com</a>
+                </p>
+            </div>
+    
+            <a href="https://maps.app.goo.gl/gL1WgQ4Br3JofGuG7" target="_blank" rel="noopener noreferrer"><p><strong>ที่อยู่:</strong> ชั้น บ้านหม้อแกงทอง อาคารพาณิชย์ 342 ตำบลแม่กา อำเภอเมืองพะเยา</p></a>
+            <p><strong>เวลาทำการ:</strong> 14.00 - 00.00</p>
+            <p class="copyright">© 2025 Tawawan Dog Café</p>
+        </div>
+    </footer>
+</body>
+<script src="./Bakery Categories-admin.js"></script>
+</html>

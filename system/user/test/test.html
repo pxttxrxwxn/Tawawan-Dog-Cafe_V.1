@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <h1>สร้าง QR Code</h1>
+    <div id="qrcode"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script>
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "00020101021229370016A000000677010111011300668294587005802TH530376454072500.0063044B37",
+            width: 128,
+            height: 128
+        });
+        setTimeout(() => {
+        let qrContainer = document.getElementById("qrcode");
+        let icon = document.createElement("img");
+        icon.src = "./picture/icon.png";
+        icon.style.position = "absolute";
+        icon.style.width = "50px";
+        icon.style.height = "50px";
+        icon.style.left = "50%";
+        icon.style.top = "50%";
+        icon.style.transform = "translate(-50%, -50%)";
+        icon.style.borderRadius = "10px";
+        qrContainer.style.position = "relative";
+        qrContainer.appendChild(icon);
+    });
+    </script>
+</body>
+</html>

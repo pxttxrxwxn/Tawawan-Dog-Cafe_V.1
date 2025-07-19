@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+</head>
+<body>
+    <h2>สมัครสมาชิก</h2>
+    <input type="text" id="username" placeholder="ชื่อผู้ใช้">
+    <input type="password" id="password" placeholder="รหัสผ่าน">
+    <button onclick="register()">สมัคร</button>
+    <p>มีบัญชีแล้ว? <a href="./2.html">เข้าสู่ระบบ</a></p>
+
+    <script>
+        function register() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username && password) {
+                localStorage.setItem("registeredUser", username);
+                localStorage.setItem("registeredPass", password);
+                alert("สมัครสมาชิกสำเร็จ! กรุณาเข้าสู่ระบบ");
+                window.location.href = "./1.html"; // ไปที่หน้าล็อกอิน
+            } else {
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+            }
+        }
+    </script>
+</body>
+</html>

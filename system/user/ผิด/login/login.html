@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tawawan Dog Café</title>
+    <link rel="icon" href="./picture/icon.png">
+    <link href="./login.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./login.html"><img src="./picture/icon.png" alt="Tawawan Dog Café"></a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="  ค้นหาเมนู">
+                <button>🔍︎</button>
+            </div>
+            <div class="menu-buttons">
+                <a href="../Frist/frist.html"><button>หน้าแรก</button></a>
+                <a href="./login.html"><button>หมวดหมู่</button></a>
+            </div>
+            <div class="icon-buttons">
+                <a href="./login.html"><button><i class='bx bx-purchase-tag-alt'></i></button></a>
+                <a href="./login.html"><button><i class='bx bx-basket'></i></button></a>
+                <a href="./login.html"><button><i class='bx bx-bell'></i></button></a>
+                <a href="../login/login.html"><button style="border-radius: 10px;"><i class='bx bx-user-circle'>log-in</i></button></a>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="login-container">
+        <h2>ล็อกอิน</h2>
+        <input type="text" id="email" placeholder="กรุณากรอกเบอร์โทรศัพท์หรืออีเมล" oninput="validateEmail()">
+        <small id="email-error" class="error-message"></small>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="กรุณากรอกรหัสผ่าน" oninput="validatePassword()">
+            <i class='bx bx-hide' id="toggle-password"></i>
+        </div>
+        <small id="password-error" class="error-message"></small>
+        <a href="../Forgotpassword/Forgotpassword.html"><div class="forgot-password">ลืมรหัสผ่าน</div></a>
+         <button class="login-btn" id="login-btn" onclick="login()">เข้าสู่ระบบ</button>
+        <a href="../CreateAccount/CreateAccount.html"><button>ลงทะเบียน</button></a>
+        <div class="alt-login">
+            <p>หรือ</p>
+            <a href="../SigninwithGoogle/SigninwithGoogle.html"><button><img src="./picture/google.png" alt="Google"> เข้าสู่ระบบด้วย Google </button></a>
+            
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <h1 class="footer-title">Tawawan Dog Café</h1>
+            
+            <div class="contact-info">
+                <p>
+                    <a href="https://www.facebook.com/TAWAWAN.CAFE" target="_blank" rel="noopener noreferrer"><img src="./picture/facebook.png" alt="Facebook" class="icon"> Tawawan Dog Café </a>
+                </p>
+                <p>
+                    <img src="./picture/telephone.png" alt="Phone" class="icon"> 093 249 5900
+                </p>
+                <p>
+                    <img src="./picture/mail.png" alt="Email" class="icon"> 
+                    <a href="mailto:nattaponkhamma160855@gmail.com">nattaponkhamma160855@gmail.com</a>
+                </p>
+            </div>
+    
+            <a href="https://maps.app.goo.gl/gL1WgQ4Br3JofGuG7" target="_blank" rel="noopener noreferrer"><p><strong>ที่อยู่:</strong> ชั้น บ้านหม้อแกงทอง อาคารพาณิชย์ 342 ตำบลแม่กา อำเภอเมืองพะเยา</p></a>
+            <p><strong>เวลาทำการ:</strong> 14.00 - 00.00</p>
+            <p class="copyright">© 2025 Tawawan Dog Café</p>
+        </div>
+    </footer>
+</body>
+<script src="./login.js"></script>
+</html>
+
+

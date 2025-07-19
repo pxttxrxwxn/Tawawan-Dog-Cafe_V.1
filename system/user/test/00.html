@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาเมนู</title>
+</head>
+<body>
+    <input type="search" placeholder="ค้นหาเมนู">
+    <button>🔍︎</button>
+    <button id="clear-btn">ล้าง</button>
+
+    <ul>
+        <li class="menu-item"><span class="menu-name">ข้าวต้มหมู</span></li>
+        <li class="menu-item"><span class="menu-name">ข้าวผัด</span></li>
+        <li class="menu-item"><span class="menu-name">แกงเขียวหวาน</span></li>
+        <li class="menu-item"><span class="menu-name">สเต็กหมู</span></li>
+    </ul>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.querySelector("input[type='search']");
+            const searchButton = document.querySelector("button");
+            const clearButton = document.getElementById("clear-btn");
+            const menuItems = document.querySelectorAll(".menu-item");
+
+            searchButton.addEventListener("click", function () {
+                const searchQuery = searchInput.value.toLowerCase();
+                menuItems.forEach(function (menuItem) {
+                    const menuName = menuItem.querySelector(".menu-name").innerText.toLowerCase();
+                    if (menuName.includes(searchQuery)) {
+                        menuItem.style.display = "block";  // Show matching menu
+                    } else {
+                        menuItem.style.display = "none";   // Hide non-matching menu
+                    }
+                });
+            });
+
+            // เพิ่มฟังก์ชันการล้างคำค้นหา
+            clearButton.addEventListener("click", function () {
+                searchInput.value = '';  // ล้างข้อความในช่องค้นหา
+                menuItems.forEach(function (menuItem) {
+                    menuItem.style.display = "block";  // แสดงเมนูทั้งหมด
+                });
+            });
+        });
+    </script>
+</body>
+</html>
