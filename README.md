@@ -47,4 +47,4 @@ https://tawawan-dog-cafe.onrender.com
 ## Contact
 หากมีคำถาม สามารถติดต่อผู้ดูแลโปรเจคได้ที่:
 -   อีเมล: naysasatadur5555@gmail.com
--   GitHub: [https://github.com/pattarawin-rungpanarat](https://github.com/pxttxrxwxn)
+-   GitHub: [https://github.com/pxttxrxwxn](https://github.com/pxttxrxwxn)
